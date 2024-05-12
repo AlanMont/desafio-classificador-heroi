@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+  <header class="container">
+      <h1>Classificador de Nível de Herói</h1>
+      <p id="emptyInputMessage" class="info"></p>
+  </header>
+  <div class="container">
+    <div class="inputLabel">
+      <input type="text" id="userHeroName" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Digite o nome do herói ou heroína</label>
+    </div>
+
+    <div class="inputLabel">
+      <input type="text" id="xpHero" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Digite o nível de experiência</label>
+    </div>
+
+    <br>
+    <a href="#" id="getData" class="myButton" onclick="getHeroData()">Classificar</a>
+    <script src="src/script.js"></script>
+    <div class="hiddenBoard" id="heroResult">
+      <div class="container">
+        <div class="circle">
+          <img id="heroAvatar" src="./src/images/heroi_ferro.jpg" alt="avatar">
+        </div>
+        <div class="info">
+          <h2 id="heroName">Nome do Usuário</h2>
+          <img id="classShield" src="./src/images/Ferro.png" alt="Ícone de usuário">
+          <p id="currentClassification"></p>
+          <p id="infoXp">Quantidade de XP</p>
+          <p id="xpMessage"></p>
+
+          <div class="progress-bar">
+            <div class="progress" id="fillXp"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
